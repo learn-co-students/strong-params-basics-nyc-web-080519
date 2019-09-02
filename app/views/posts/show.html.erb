@@ -1,2 +1,5 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
+
+<%=  link_to "See all posts", posts_path %>
+<%= button_to "Edit this post", edit_post_path(@post.id), method: :get%>
